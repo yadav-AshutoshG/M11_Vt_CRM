@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Suite">
+  
+   <test thread-count="5" parallel="tests" name="Test2Edge">
+    <classes>
+      
+      <class name="organizationTestModule.CreateOrgNameIndustry_Gov"/>
+     
+    </classes>
+  </test> <!-- Test -->
+  
+   <test thread-count="5" parallel="tests" name="Test3Firfox">
+    <classes>
+      
+      <class name="organizationTestModule.ACreatOrgName"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  
+</suite> <!-- Suite -->
