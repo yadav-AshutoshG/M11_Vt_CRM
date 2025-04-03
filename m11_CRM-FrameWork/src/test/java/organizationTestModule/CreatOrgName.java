@@ -1,19 +1,23 @@
 package organizationTestModule;
 
+import java.io.IOException;
 import java.time.Duration;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
 
-public class CreatOrgName {
+import base_utility.BaseClass;
+import generic_utility.FileUtility;
+
+public class CreatOrgName extends BaseClass {
 
 	@Test
-	public void creatOrgName() throws InterruptedException {
-
+	public void creatOrgName() throws InterruptedException, IOException {
+ 
 		/*
 		 * ** Get Data From properties File ***
 		 * 
@@ -22,7 +26,9 @@ public class CreatOrgName {
 		 * 
 		 * 
 		 */
-
+			FileUtility fu = new FileUtility();
+			String Browser = fu.getDataFromPropertiesFile("bro");
+			System.out.println(Browser);
 		// *** Get Data From Excel***
 		/*
 		 * 
@@ -41,8 +47,8 @@ public class CreatOrgName {
 
 		// Open The Browser
 //			WebDriver driver = new ChromeDriver();
-//			WebDriver driver = new EdgeDriver();
-		WebDriver driver = new FirefoxDriver();
+		WebDriver driver = new EdgeDriver();
+//		WebDriver driver = new FirefoxDriver();
 
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
@@ -58,9 +64,6 @@ public class CreatOrgName {
 		WebElement submitBtn = driver.findElement(By.id("submitButton"));
 		submitBtn.click();
 		Thread.sleep(3000);
-		
-		
-		
 
 //		CrateOrganizationName
 		driver.findElement(By.linkText("Organizations")).click();

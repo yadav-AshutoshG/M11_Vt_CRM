@@ -3,11 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="organizationTestModule.CreatOrgName2">
+      <class name="organizationTestModule.CreatOrgName">
         <methods>
+          <include name="bt"/>
+          <include name="logout"/>
+          <include name="at"/>
+          <include name="browser"/>
+          <include name="Close_Browser"/>
           <include name="creatOrgName"/>
+          <include name="login"/>
         </methods>
-      </class> <!-- organizationTestModule.CreatOrgName2 -->
+      </class> <!-- organizationTestModule.CreatOrgName -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

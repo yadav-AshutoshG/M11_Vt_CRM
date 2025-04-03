@@ -2,28 +2,40 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-03-26T14:57:17 IST" name="Default suite" finished-at="2025-03-26T14:57:47 IST" duration-ms="30152">
+  <suite started-at="2025-04-01T14:29:00 IST" name="Default suite" finished-at="2025-04-01T14:30:22 IST" duration-ms="82091">
     <groups>
     </groups>
-    <test started-at="2025-03-26T14:57:17 IST" name="Default test" finished-at="2025-03-26T14:57:47 IST" duration-ms="30152">
-      <class name="organizationTestModule.CreatOrgName2">
-        <test-method is-config="true" signature="browser()[pri:0, instance:organizationTestModule.CreatOrgName2@313ac989]" started-at="2025-03-26T14:57:17 IST" name="browser" finished-at="2025-03-26T14:57:21 IST" duration-ms="3758" status="PASS">
+    <test started-at="2025-04-01T14:29:00 IST" name="Default test" finished-at="2025-04-01T14:30:22 IST" duration-ms="82091">
+      <class name="organizationTestModule.CreatOrgName">
+        <test-method is-config="true" signature="bt()[pri:0, instance:organizationTestModule.CreatOrgName@459e9125]" started-at="2025-04-01T14:29:00 IST" name="bt" finished-at="2025-04-01T14:29:00 IST" duration-ms="14" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bt -->
+        <test-method is-config="true" signature="browser()[pri:0, instance:organizationTestModule.CreatOrgName@459e9125]" started-at="2025-04-01T14:29:00 IST" name="browser" finished-at="2025-04-01T14:29:05 IST" duration-ms="4212" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browser -->
-        <test-method is-config="true" signature="login()[pri:0, instance:organizationTestModule.CreatOrgName2@313ac989]" started-at="2025-03-26T14:57:21 IST" name="login" finished-at="2025-03-26T14:57:29 IST" duration-ms="8255" status="PASS">
+        <test-method is-config="true" signature="login()[pri:0, instance:organizationTestModule.CreatOrgName@459e9125]" started-at="2025-04-01T14:29:05 IST" name="login" finished-at="2025-04-01T14:29:13 IST" duration-ms="8424" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="creatOrgName()[pri:0, instance:organizationTestModule.CreatOrgName2@313ac989]" started-at="2025-03-26T14:57:29 IST" name="creatOrgName" finished-at="2025-03-26T14:57:47 IST" duration-ms="17863" status="PASS">
+        <test-method signature="creatOrgName()[pri:0, instance:organizationTestModule.CreatOrgName@459e9125]" started-at="2025-04-01T14:29:13 IST" name="creatOrgName" finished-at="2025-04-01T14:30:08 IST" duration-ms="55306" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- creatOrgName -->
-        <test-method is-config="true" signature="logout()[pri:0, instance:organizationTestModule.CreatOrgName2@313ac989]" started-at="2025-03-26T14:57:47 IST" name="logout" finished-at="2025-03-26T14:57:47 IST" duration-ms="215" status="PASS">
+        <test-method is-config="true" signature="logout()[pri:0, instance:organizationTestModule.CreatOrgName@459e9125]" started-at="2025-04-01T14:30:08 IST" name="logout" finished-at="2025-04-01T14:30:22 IST" duration-ms="13809" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logout -->
-      </class> <!-- organizationTestModule.CreatOrgName2 -->
+        <test-method is-config="true" signature="Close_Browser()[pri:0, instance:organizationTestModule.CreatOrgName@459e9125]" started-at="2025-04-01T14:30:22 IST" name="Close_Browser" finished-at="2025-04-01T14:30:22 IST" duration-ms="268" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Close_Browser -->
+        <test-method is-config="true" signature="at()[pri:0, instance:organizationTestModule.CreatOrgName@459e9125]" started-at="2025-04-01T14:30:22 IST" name="at" finished-at="2025-04-01T14:30:22 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- at -->
+      </class> <!-- organizationTestModule.CreatOrgName -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

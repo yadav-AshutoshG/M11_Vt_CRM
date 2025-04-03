@@ -1,46 +1,17 @@
 package organizationTestModule;
 
-import java.time.Duration;
-
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.interactions.Actions;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class CreatOrgName2 {
-	WebDriver driver;
+import base_utility.BaseClass;
 
-//	
-	@BeforeClass
-	void browser() {
+public class CreatOrgName2 extends BaseClass {
 
-//		driver = new FirefoxDriver();
-		driver= new ChromeDriver();
-//		driver= new EdgeDriver();
-		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
-//		Pass Fully Qualified Path Of_Url
-		driver.get("http://localhost:8888/");
-	}
-
-	@BeforeMethod
-	void login() throws InterruptedException {
-
-		WebElement username = driver.findElement(By.name("user_name"));
-		username.sendKeys("admin");
-		WebElement password = driver.findElement(By.name("user_password"));
-		password.sendKeys("admin");
-		WebElement submitBtn = driver.findElement(By.id("submitButton"));
-		submitBtn.click();
-		Thread.sleep(3000);
-	}
-
-	@Test
+	/*
+	 * Our Main Test Script
+	 */
+	@Test()
 	public void creatOrgName() throws InterruptedException {
 
 //		CrateOrganizationName
@@ -49,7 +20,7 @@ public class CreatOrgName2 {
 		driver.findElement(By.cssSelector("img[alt='Create Organization...']")).click();
 
 		WebElement org = driver.findElement(By.name("accountname"));
-		String orgName = "jsp_" + (int) (Math.random() * 1000);
+		String orgName = "jsp_" + (int) (Math.random() * 9000);
 		org.sendKeys(orgName);
 
 		// save
@@ -62,12 +33,4 @@ public class CreatOrgName2 {
 		}
 	}
 
-	@AfterMethod
-	void logout() {
-		WebElement singOut = driver.findElement(By.cssSelector("img[src='themes/softed/images/user.PNG']"));
-		Actions act = new Actions(driver);
-		act.moveToElement(singOut).build().perform();
- }
-	
-	
 }

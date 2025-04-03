@@ -10,7 +10,7 @@ import org.apache.poi.ss.usermodel.WorkbookFactory;
 public class GetDataFromExcelMethoChai {
 	
 	
-//	Excel Data Working
+//	Excel Data Working  using  Method Chaining
 	
 
 	public static void main(String[] args) throws EncryptedDocumentException, IOException {
@@ -24,7 +24,7 @@ public class GetDataFromExcelMethoChai {
 		Workbook wb = WorkbookFactory.create(fis);
 			 
 //		Method  Chaining
-		String data = wb.getSheet("sName").getRow(1).getCell(1).getStringCellValue();
+		String data = wb.getSheet("org").getRow(1).getCell(0).getStringCellValue();
 		System.out.println(data);
 
 		

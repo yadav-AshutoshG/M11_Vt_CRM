@@ -8,11 +8,11 @@
       </run>
     </groups>
     <classes>
-      <class name="organizationTestModule.CreateOrgNameIndustry_Gov">
+      <class name="organizationTestModule.CreatOrgName2">
         <methods>
-          <include name="createOrgName_Industry_Gov"/>
+          <include name="creatOrgName"/>
         </methods>
-      </class> <!-- organizationTestModule.CreateOrgNameIndustry_Gov -->
+      </class> <!-- organizationTestModule.CreatOrgName2 -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

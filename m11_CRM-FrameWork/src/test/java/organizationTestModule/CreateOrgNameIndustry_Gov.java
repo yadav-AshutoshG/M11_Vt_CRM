@@ -12,7 +12,7 @@ import org.testng.annotations.Test;
 
 public class CreateOrgNameIndustry_Gov {
 
-	@Test(groups = {"regression"})
+	@Test(groups="regression")
 	public void createOrgName_Industry_Gov() throws InterruptedException {
 		System.out.println("regression");
 //		WebDriver driver = new ChromeDriver();

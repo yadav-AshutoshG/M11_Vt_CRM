@@ -13,7 +13,7 @@ public class GetDataFromPropertiesFileData{
 		
 //		  ####  Not  Working Code  ###
 		
-		System.out.println("===Start===");
+//		System.out.println("===Start===");
 		
 
 //		#1)
@@ -68,8 +68,8 @@ public class GetDataFromPropertiesFileData{
 		System.out.println(PASSWORD);
 		
 		
-		Thread.sleep(3000);
-		System.out.println("====End===");
+//		Thread.sleep(3000);
+//		System.out.println("====End===");
 		
 	}
 
